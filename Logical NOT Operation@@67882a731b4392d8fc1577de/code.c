@@ -4,8 +4,8 @@ int main()
     int b;
     scanf("%d ",&b);
     if(!(b>0)){
-        printf("False");
+        printf("True");
     }
     else
-    printf("True");
+    printf("False");
 }
