@@ -3,6 +3,6 @@ int main()
 {
     char s;
     scanf("%c",&s);
-    printf("AsCII value: %d",s);
+    printf("AsCII Value: %d",s);
     return 0;
 }
