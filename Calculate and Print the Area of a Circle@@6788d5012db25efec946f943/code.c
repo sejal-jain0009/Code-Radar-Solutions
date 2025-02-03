@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    float n;
-    scanf("%f", &n);
-    prinf("Area: %.2f",(3.14)*n*n);
+    float radius;
+    scanf("%f", &radius);
+    prinf("Area: %.2f", 3.14 * radius * radius);
     return 0;
 } 
