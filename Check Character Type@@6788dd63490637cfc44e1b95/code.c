@@ -5,13 +5,13 @@ int main()
     scanf("%s",c);
     if (c>='a' &&c<='z'){
         if(c=='a'||c=='e'||c=='i'||c=='o'||c==u)
-        printf("Vowel");
+        {printf("Vowel");}
         else
-        printf("Consonant");
+        {printf("Consonant");}
     }
     else if (c>=0 &&c<=9)
-    printf("Digit");
+    {printf("Digit");}
     else
-    printf("Special Character");
+    {printf("Special Character");}
     return 0;
 }
