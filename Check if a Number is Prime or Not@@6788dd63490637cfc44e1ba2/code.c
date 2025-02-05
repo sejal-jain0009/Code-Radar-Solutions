@@ -8,8 +8,11 @@ int main()
         if(a%i==0){
             break;
         }
-        printf("Not Prime");
+        printf("Prime");
+
+        else{
+            printf("Not Prime");
+        }
     }
-    printf("Prime");
     return 0;
 }
