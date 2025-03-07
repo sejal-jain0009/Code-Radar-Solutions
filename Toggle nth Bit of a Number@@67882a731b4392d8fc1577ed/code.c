@@ -15,14 +15,12 @@ int main() {
     scanf("%d", &num);
     scanf("%d", &n);
 
-    // Before toggling
-    printf("Before toggling, number = %d\n", num);
     
     // Toggle the nth bit
     toggleNthBit(&num, n);
 
     // After toggling
-    printf("After toggling, number = %d\n", num);
+    printf(" %d\n", num);
 
     return 0;
 }
