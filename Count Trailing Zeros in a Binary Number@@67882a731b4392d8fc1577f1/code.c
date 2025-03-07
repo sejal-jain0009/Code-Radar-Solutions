@@ -18,7 +18,7 @@ int main() {
 
     // Count and print the number of trailing zeroes
     int trailingZeroes = countTrailingZeroes(num);
-    printf("The number of trailing zeroes in the binary representation of %d is: %d\n", num, trailingZeroes);
+    printf("%d\n",trailingZeroes);
 
     return 0;
 }
