@@ -12,9 +12,7 @@ int main() {
     int num, n;
 
     // Input number and the bit position to toggle
-    printf("Enter the number: ");
     scanf("%d", &num);
-    printf("Enter the bit position (n): ");
     scanf("%d", &n);
 
     // Before toggling
