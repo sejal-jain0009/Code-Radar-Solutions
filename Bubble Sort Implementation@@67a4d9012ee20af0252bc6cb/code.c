@@ -28,12 +28,7 @@ void printArray(int arr[], int n) {
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Original array: ");
-    printArray(arr, n);
-
     bubbleSort(arr, n);
-
-    printf("Sorted array in ascending order: ");
     printArray(arr, n);
 
     return 0;
