@@ -5,7 +5,6 @@ int main() {
     int n;
 
     // Input size of array
-    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
     if(n < 2) {
