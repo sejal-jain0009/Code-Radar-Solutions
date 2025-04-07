@@ -32,7 +32,7 @@ int main() {
     str[strcspn(str, "\n")] = '\0';
 
     if (isPangram(str)) {
-        printf("TYes\n");
+        printf("Yes\n");
     } else {
         printf("No\n");
     }
