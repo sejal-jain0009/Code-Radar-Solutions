@@ -36,4 +36,4 @@ int main() {
 
         // Check if even or odd
         if (arr[i] % 2 == 0)
-            even
+            printf("even");
