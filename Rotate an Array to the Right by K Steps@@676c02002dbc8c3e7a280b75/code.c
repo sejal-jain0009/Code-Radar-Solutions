@@ -16,19 +16,18 @@ int main() {
     int n, k;
 
     // Input array size
-    printf("Enter the number of elements in the array: ");
+
     scanf("%d", &n);
 
     int arr[n];
 
     // Input array elements
-    printf("Enter %d elements:\n", n);
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     // Input k (steps to rotate)
-    printf("Enter the number of steps to rotate: ");
+   
     scanf("%d", &k);
 
     // Handle cases where k > n
@@ -40,7 +39,7 @@ int main() {
     reverse(arr, k, n - 1);
 
     // Output the result
-    printf("Array after rotation:\n");
+    
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
