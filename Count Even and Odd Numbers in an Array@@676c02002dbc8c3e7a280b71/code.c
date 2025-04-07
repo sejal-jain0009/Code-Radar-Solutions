@@ -4,7 +4,6 @@ int main() {
     int n;
 
     // Input array size
-    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
     int arr[n];
@@ -23,8 +22,7 @@ int main() {
     }
 
     // Output the result
-    printf("Number of even elements: %d\n", evenCount);
-    printf("Number of odd elements: %d\n", oddCount);
+    printf("%d %d", evenCount,oddCount);
 
     return 0;
 }
