@@ -16,7 +16,6 @@ int main() {
     int arr[n];
 
     // Input elements
-    printf("Enter %d elements:\n", n);
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -37,7 +36,7 @@ int main() {
     if(second == INT_MIN) {
         printf("-1\n"); // No second largest element
     } else {
-        printf("Second largest element is: %d\n", second);
+        printf("%d\n", second);
     }
 
     return 0;
