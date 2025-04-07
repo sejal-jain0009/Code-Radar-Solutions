@@ -22,7 +22,7 @@ int main() {
     // Find the first non-repeating character
     for (int i = 0; str[i] != '\0'; i++) {
         if (freq[(unsigned char)str[i]] == 1) {
-            printf("'%c'\n", str[i]);
+            printf("%c\n", str[i]);
             return 0;
         }
     }
