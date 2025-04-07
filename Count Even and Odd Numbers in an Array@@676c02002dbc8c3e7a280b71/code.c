@@ -10,7 +10,7 @@ int main() {
     int evenCount = 0, oddCount = 0;
 
     // Input array elements
-    printf("Enter %d integers:\n", n);
+    
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
 
