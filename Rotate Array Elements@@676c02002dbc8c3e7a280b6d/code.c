@@ -36,22 +36,21 @@ int main() {
     int arr[n];
 
     // Input array elements
-    printf("Enter the array elements:\n");
+   
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     // Input rotation value
-    printf("Enter number of positions to rotate (K): ");
+
     scanf("%d", &k);
 
     // Rotate the array
     rotateRight(arr, n, k);
 
     // Output the rotated array
-    printf("Array after rotating right by %d positions:\n", k);
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n ", arr[i]);
     }
     printf("\n");
 
