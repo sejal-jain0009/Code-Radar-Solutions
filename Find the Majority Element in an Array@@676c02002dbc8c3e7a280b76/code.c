@@ -31,20 +31,20 @@ int main() {
     int n;
 
     // Input array size
-    printf("Enter the number of elements in the array: ");
+   
     scanf("%d", &n);
 
     int arr[n];
 
     // Input array elements
-    printf("Enter %d elements:\n", n);
+    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     // Find and print the majority element
     int result = findMajorityElement(arr, n);
-    printf("Majority Element: %d\n", result);
+    printf("%d\n", result);
 
     return 0;
 }
