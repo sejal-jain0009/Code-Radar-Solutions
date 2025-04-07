@@ -30,7 +30,7 @@ int main() {
     int n, k;
 
     // Input the size of the array
-    printf("Enter the number of elements in the array: ");
+    
     scanf("%d", &n);
 
     int arr[n];
