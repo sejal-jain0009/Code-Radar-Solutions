@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int n, target;
-    scanf("%d", &n);
+    int n;
+    scanf("%d", &n); // Input array size
 
     int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]); // Input array elements
     }
 
-    scanf("%d", &target);
-
-    // 2D array to track printed pairs (assuming values are within 0-100)
-    int printed[201][201] = {0}; // use 201 to allow negative numbers if needed (adjust as required)
-
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] == target) {
-                int a = arr[i] < arr[j] ? arr[i] : arr[j];
-                int b = arr[i] > arr[j] ? arr[i] : arr[j];
-                if (!printed[a + 100][b + 100]) { // offset by 100 to handle negative indices
-                    printf("%d %d\n", a, b);
-                    printed[a + 100][b + 100] = 1;
-                }
+    int duplicate = -1;
+    for(int i = 0; i < n; i++) {
+        for(int j = i + 1; j < n; j++) {
+            if(arr[i] == arr[j]) {
+                duplicate = arr[i];
+                break;
             }
         }
+        if(duplicate != -1)
+            break;
     }
+
+    if(duplicate != -1)
+        printf("%d\n", duplicate); // Output the duplicate
 
     return 0;
 }
