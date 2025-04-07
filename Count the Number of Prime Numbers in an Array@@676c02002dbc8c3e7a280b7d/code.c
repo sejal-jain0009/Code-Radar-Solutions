@@ -14,11 +14,11 @@ int isPrime(int num) {
 
 int main() {
     int n;
-    printf("Enter number of elements in the array: ");
+    
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter %d elements:\n", n);
+    
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
@@ -28,6 +28,6 @@ int main() {
             primeCount++;
     }
 
-    printf("Number of prime numbers in the array: %d\n", primeCount);
+    printf("%d\n", primeCount);
     return 0;
 }
