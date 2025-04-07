@@ -11,7 +11,7 @@ int isVowel(char ch) {
 int main() {
     char str[100], ch;
 
-    printf("Enter a string: ");
+    
     fgets(str, sizeof(str), stdin);
 
     // Remove newline character if exists
