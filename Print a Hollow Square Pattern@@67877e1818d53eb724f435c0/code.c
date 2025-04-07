@@ -12,7 +12,7 @@ int main() {
         for (j = 0; j < N; j++) {
             // Print star if on border, otherwise print space
             if (i == 0 || i == N - 1 || j == 0 || j == N - 1) {
-                printf("* ");
+                printf("*");
             } else {
                 printf("  ");
             }
