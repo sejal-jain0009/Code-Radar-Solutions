@@ -37,19 +37,19 @@ int main() {
     int n;
 
     // Input array size
-    printf("Enter the number of elements: ");
+
     scanf("%d", &n);
 
     int arr[n];
 
     // Input array elements
-    printf("Enter %d elements:\n", n);
+   
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int result = longestConsecutive(arr, n);
-    printf("Length of the longest consecutive sequence: %d\n", result);
+    printf("%d\n", result);
 
     return 0;
 }
