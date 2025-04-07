@@ -1,28 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int N, i, j;
+    int n;
+    
+    // Input number of row
+    scanf("%d", &n);
 
-    // Input number of rows
-  
-    scanf("%d", &N);
-
-    for (i = 1; i <= N; i++) {
-        // Print spaces to center the numbers
-        for (j = 1; j <= N - i; j++) {
-            printf(" ");
+    // Loop through rows
+    for (int i = 1; i <= n; i++) {
+        // Print numbers from 1 to i
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);
         }
-
-        // Print increasing numbers from 1 to i
-        for (j = 1; j <= i; j++) {
-            printf("%d", j);
-        }
-
-        // Print decreasing numbers from i-1 to 1
-        for (j = i - 1; j >= 1; j--) {
-            printf("%d", j);
-        }
-
         printf("\n");
     }
 
