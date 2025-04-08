@@ -34,8 +34,7 @@ int main() {
     // Display student data
     
     for (i = 0; i < N; i++) {
-        printf("Roll Number: %d Name: %s Marks: %.2f\n\n", students[i].roll_no);
-        printf("Marks: %.2f\n\n", students[i].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n\n", students[i].roll_no,students[i].name,students[i].marks);
     }
 
     return 0;
