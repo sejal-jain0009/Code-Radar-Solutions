@@ -28,7 +28,7 @@ int main() {
         float perimeter = 2 * (rects[i].length + rects[i].breadth);
 
         printf("Rectangle %d: ", i + 1);
-        printf(" Area = %.2f,", area);
+        printf("Area = %.2f,", area);
         printf(" Perimeter = %.2f\n", perimeter);
     }
 
