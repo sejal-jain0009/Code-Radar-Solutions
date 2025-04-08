@@ -28,10 +28,10 @@ int main() {
 
     if(median==1)
     {
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
 return 0;
 }
