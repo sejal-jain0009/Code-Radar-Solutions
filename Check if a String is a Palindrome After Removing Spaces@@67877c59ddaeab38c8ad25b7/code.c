@@ -1,46 +1,31 @@
 // Your code here...
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdlib.h>
 
-int isPalindrome(char str[]) {
-    char cleaned[100];
-    int i, j = 0;
-
-    // Remove spaces and store cleaned version
-    for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ') {
-            cleaned[j++] = str[i];
-        }
-    }
-    cleaned[j] = '\0';
-
-    // Check for palindrome
-    int start = 0, end = j - 1;
-    while (start < end) {
-        if (cleaned[start] != cleaned[end]) {
-            return 0; // Not a palindrome
-        }
-        start++;
-        end--;
-    }
-
-    return 1; // It's a palindrome
+// Comparator function for qsort
+int compare(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
 }
 
 int main() {
-    char str[100];
-
-    fgets(str, sizeof(str), stdin);
-
-    // Remove trailing newline if present
-    str[strcspn(str, "\n")] = '\0';
-
-    if (isPalindrome(str)) {
-        printf("Yes\n");
-    } else {
-        printf("No\n");
+    int n;
+    scanf("%d", &n);
+    
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
+    // Sort the array
+    qsort(arr, n, sizeof(int), compare);
+
+    int median;
+    if(n % 2 == 1) {
+        median = arr[n / 2];
+    } else {
+        median = (arr[n / 2 - 1] + arr[n / 2]) / 2;
+    }
+
+    printf("%d\n", median);
     return 0;
 }
