@@ -21,11 +21,17 @@ int main() {
 
     int median;
     if(n % 2 == 1) {
-        printf("Yes");
+        median = arr[n / 2];
     } else {
         median = (arr[n / 2 - 1] + arr[n / 2]) / 2;
     }
 
-    printf("%d\n", median);
+    if(median==1)
+    {
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
 return 0;
 }
