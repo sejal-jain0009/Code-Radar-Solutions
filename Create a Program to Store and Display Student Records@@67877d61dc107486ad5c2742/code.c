@@ -12,7 +12,7 @@ int main() {
     int N;
 
     // Ask user how many students
-    printf("Enter the number of students: ");
+  
     scanf("%d", &N);
 
     // Create array of student structures
@@ -20,14 +20,12 @@ int main() {
 
     // Input student data
     for (int i = 0; i < N; i++) {
-        printf("\nEnter details for student %d:\n", i + 1);
-        printf("Roll Number: ");
+       
+     
         scanf("%d", &students[i].roll_no);
 
-        printf("Name: ");
         scanf(" %s", students[i].name);  // Reads name without spaces
 
-        printf("Marks: ");
         scanf("%f", &students[i].marks);
     }
 
