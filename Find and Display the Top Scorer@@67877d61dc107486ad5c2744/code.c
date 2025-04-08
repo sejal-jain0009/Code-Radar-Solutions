@@ -38,7 +38,7 @@ int main() {
 
     // Display the top student details
     
-    printf(" Top Scorer: Roll Number: %d,", top_student.roll_no);
+    printf(" Top Scorer:  Roll Number: %d,", top_student.roll_no);
     printf(" Name: %s,", top_student.name);
     printf(" Marks: %.2f\n", top_student.marks);
 
