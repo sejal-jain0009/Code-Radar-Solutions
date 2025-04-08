@@ -8,9 +8,7 @@ struct Rectangle {
 };
 
 int main() {
-    int N, i;
-
-   
+    int N, i;   
     scanf("%d", &N);
 
     struct Rectangle rects[N];
@@ -31,7 +29,7 @@ int main() {
 
         printf("Rectangle: %d ", i + 1);
         printf("Area = %.2f\n,", area);
-        printf("Perimeter = %.2f\n\n", perimeter);
+        printf("Perimeter = %.2f\n", perimeter);
     }
 
     return 0;
