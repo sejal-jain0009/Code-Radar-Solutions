@@ -34,7 +34,7 @@ int main() {
     average = total_marks / N;
 
     // Display average
-    printf("\nAverage Marks: %.2f\n", N, average);
+    printf("Average Marks: %.2f\n",average);
 
     return 0;
 }
