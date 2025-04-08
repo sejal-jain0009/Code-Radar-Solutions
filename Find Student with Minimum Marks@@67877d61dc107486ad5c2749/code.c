@@ -38,10 +38,10 @@ int main() {
     }
 
     // Display the student with lowest marks
-    printf(" Student with Lowest Marks: ");
+    printf(" Student with Minimum Marks: ");
     printf("Roll Number: %d,", lowest.roll_no);
-    printf("Name: %s,", lowest.name);
-    printf("Marks: %.2f", lowest.marks);
+    printf(" Name: %s,", lowest.name);
+    printf(" Marks: %.2f", lowest.marks);
 
     return 0;
 }
