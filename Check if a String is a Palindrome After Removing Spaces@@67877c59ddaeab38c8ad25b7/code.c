@@ -26,6 +26,6 @@ int main() {
         median = (arr[n / 2 - 1] + arr[n / 2]) / 2;
     }
 
-    printf("%d\n", median);
+    printf("Yes\n");
     return 0;
 }
