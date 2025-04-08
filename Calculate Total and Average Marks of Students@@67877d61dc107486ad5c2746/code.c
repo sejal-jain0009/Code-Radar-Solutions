@@ -35,7 +35,7 @@ int main() {
 
     // Display results
     printf("Total Marks: %.2f\n", total);
-    printf("Average Marks : %.2f\n", average);
+    printf("Average Marks: %.2f\n", average);
 
     return 0;
 }
