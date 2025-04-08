@@ -21,7 +21,7 @@ int main() {
 
     int median;
     if(n % 2 == 1) {
-        median = arr[n / 2];
+        printf("Yes");
     } else {
         median = (arr[n / 2 - 1] + arr[n / 2]) / 2;
     }
