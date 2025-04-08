@@ -27,5 +27,5 @@ int main() {
     }
 
     printf("%d\n", median);
-    return 0;
+return 0;
 }
