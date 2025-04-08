@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 // Define the structure
@@ -9,33 +8,22 @@ struct student {
 };
 
 int main() {
-    int N, i;
+    int N;
+    scanf("%d", &N);  // Read number of students
 
-    // Ask the user how many students they want to enter
- 
-    scanf("%d", &N);
-
-    // Create an array of structures
     struct student students[N];
 
-    // Input student data
-    for (i = 0; i < N; i++) {
-       
-   
-        scanf("%d", &students[i].roll_no);
-
-     
-        scanf(" %[^\n]", students[i].name); // read string with spaces
-
- 
-        scanf("%f", &students[i].marks);
+    // Read student details
+    for (int i = 0; i < N; i++) {
+        scanf("%d %s %f", &students[i].roll_no, students[i].name, &students[i].marks);
     }
 
-    // Display student data
-    
-    for (i = 0; i < N; i++) {
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_no,students[i].name,students[i].marks);
+    // Print student details
+    for (int i = 0; i < N; i++) {
+        printf("Roll Number : %d, Name: %s, Marks: %.2f\n",
+               students[i].roll_no, students[i].name, students[i].marks);
     }
 
     return 0;
 }
+
