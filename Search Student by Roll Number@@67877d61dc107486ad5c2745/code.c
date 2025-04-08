@@ -46,7 +46,7 @@ int main() {
     }
 
     if (!found) {
-        printf("\nStudent not found.\n");
+        printf("Student not found.\n");
     }
 
     return 0;
