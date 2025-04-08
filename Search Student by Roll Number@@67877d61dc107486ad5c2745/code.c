@@ -38,8 +38,8 @@ int main() {
         if (students[i].roll_no == search_roll) {
             
             printf("Roll Number: %d,", students[i].roll_no);
-            printf("Name: %s,", students[i].name);
-            printf("Marks: %.2f\n", students[i].marks);
+            printf(" Name: %s,", students[i].name);
+            printf(" Marks: %.2f\n", students[i].marks);
             found = true;
             break;
         }
