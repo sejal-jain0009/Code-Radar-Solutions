@@ -20,17 +20,6 @@ void printArray(int arr[], int n) {
         if (i != n - 1)
             printf(" ");
     }
-    printf("\n");
+    
 }
 
-// int main() {
-//     int n;
-//     scanf("%d", &n);
-//     int arr[n];
-//     for (int i = 0; i < n; i++) {
-//         scanf("%d", &arr[i]);
-//     }
-//     insertionSort(arr, n);
-//     printArray(arr, n);
-//     return 0;
-// }
